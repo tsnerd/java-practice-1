@@ -17,6 +17,7 @@ public class Main {
         } else {
             System.out.println("Вы взрослый");
         }
+        scanner.close();
     }
     ///  задание 2
     public static void task2(String[] args) {
@@ -41,16 +42,25 @@ public class Main {
                 System.out.print(nums[i] + " ");
             }
         }
+
+        System.out.println();
     }
 
     /// задание 3
 
     public static void task3(String[] args) {
-
+        
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                System.out.print(i + " * " + j + " = " + (i * j) + "\t");
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
         task1(args);
         task2(args);
+        task3(args);
     }
 }
